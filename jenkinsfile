@@ -4,7 +4,7 @@ pipeline {
         stage('Build') { 
             steps {
               echo 'yarn ...'
-              nodejs(node_version18){
+              nodejs('node_version18'){
                  sh 'yarn install'
               }
             }
